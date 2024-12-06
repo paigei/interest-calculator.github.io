@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px auto 30px;
+}
+
+header {
+  padding: 5px;
+  font-size: 50px;
+  border-style: solid;
+  border-radius: 10px;
+  transition: font-size 2s;
+}
+
+header:hover {
+  font-size: 60px;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+  font-family: "Fascinate Inline";
+  text-shadow: 5px 5px 1px grey;
+  color: white;
+}
+
+footer {
+  font-size: 20px;
+  padding: 5px;
+}
+
+main {
+  padding: 20px 5px 10px;
+  /*
+  TRBL */
+  background-image: linear-gradient(90deg, pink, lightblue, lightgreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  grid-template: auto auto auto auto / 5em 180px;
+  gap: 4px;
+  width: 100%;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+img {
+  animation: image-spin 1s linear forwards;
+}
+
+@keyframes image-spin {
+  0% {
+    rotate: 0deg;
+    transform: translate(100px, 0);
+  }
+  100% {
+    rotate: 360deg;
+    transform: translate(0);
+  }
+}
+
+.center {
+  display: block;
+  margin: 20px 0;
+}

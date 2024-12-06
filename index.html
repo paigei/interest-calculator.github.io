@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interest</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article>
+      <header>
+        <div>💰</div>
+        <div>Interest</div>
+        <div>💵</div>
+      </header>
+      <main>
+        <form>
+          <div>Principal</div>
+          <input id="principal" />
+          <div>Period</div>
+          <select id="period">
+            <option value="0">---</option>
+            <option value="360">daily</option>
+            <option value="12">monthly</option>
+            <option value="4">quarterly</option>
+            <option value="1">yearly</option>
+          </select>
+          <div>APR: <span id="aprNum">0</span></div>
+          <input type="range" id="apr" />
+          <div>Years</div>
+          <input id="years" />
+        </form>
+        <p>Interest accumulated is <output id="accumulated" /></p>
+        <p>Total at end is <output id="amount" /></p>
+        <img
+          src="https://img.freepik.com/premium-vector/rising-business-graph-chart-suitable-project-web-design_929446-273.jpg"
+          alt="chart"
+          class="center"
+          width="200"
+          height="150"
+          style="max-width: 100%; height: auto"
+        />
+      </main>
+      <footer>
+        <div>© 2024</div>
+        <div>
+          <a
+            href="https://codesandbox.io/p/sandbox/tip-calculator-6ygc22?file=%2Findex.html%3A22%2C22"
+            >Code</a
+          >
+        </div>
+      </footer>
+    </article>
+  </body>
+</html>
